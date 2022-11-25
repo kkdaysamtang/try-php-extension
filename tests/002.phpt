@@ -13,5 +13,5 @@ $ret = test1();
 var_dump($ret);
 ?>
 --EXPECT--
-The extension des_encrypt is loaded and working!
+The extension des_encrypt is loaded and working!!!!!
 NULL

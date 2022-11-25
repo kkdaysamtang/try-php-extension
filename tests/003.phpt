@@ -1,5 +1,5 @@
 --TEST--
-des_encrypt_test2() Basic test
+test2() Basic test
 --SKIPIF--
 <?php
 if (!extension_loaded('des_encrypt')) {
@@ -8,8 +8,8 @@ if (!extension_loaded('des_encrypt')) {
 ?>
 --FILE--
 <?php
-var_dump(des_encrypt_test2());
-var_dump(des_encrypt_test2('PHP'));
+var_dump(test2());
+var_dump(test2('PHP'));
 ?>
 --EXPECT--
 string(11) "Hello World"

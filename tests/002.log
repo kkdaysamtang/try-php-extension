@@ -1,8 +1,0 @@
-
----- EXPECTED OUTPUT
-The extension des_encrypt is loaded and working!
-NULL
----- ACTUAL OUTPUT
-The extension des_encrypt is loaded and working!!!!!
-NULL
----- FAILED
