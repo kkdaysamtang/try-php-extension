@@ -1,0 +1,7 @@
+ARG_ENABLE('des_encrypt', 'des_encrypt support', 'no');
+
+if (PHP_DES_ENCRYPT != 'no') {
+	AC_DEFINE('HAVE_DES_ENCRYPT', 1, 'des_encrypt support enabled');
+
+	EXTENSION('des_encrypt', 'des_encrypt.c', null, '/DZEND_ENABLE_STATIC_TSRMLS_CACHE=1');
+}
