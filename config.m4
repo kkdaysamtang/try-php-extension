@@ -90,5 +90,10 @@ if test "$PHP_DES_ENCRYPT" != "no"; then
   dnl In case of no dependencies
   AC_DEFINE(HAVE_DES_ENCRYPT, 1, [ Have des_encrypt support ])
 
-  PHP_NEW_EXTENSION(des_encrypt, des_encrypt.c, $ext_shared)
+  DES_SOURCES="\
+    des_encrypt.c \
+    DES.c
+  "
+
+  PHP_NEW_EXTENSION(des_encrypt, $DES_SOURCES, $ext_shared)
 fi

@@ -8,6 +8,7 @@
 #include "ext/standard/info.h"
 #include "php_des_encrypt.h"
 #include "des_encrypt_arginfo.h"
+#include "DES.h"
 
 /* For compatibility with older PHP versions */
 #ifndef ZEND_PARSE_PARAMETERS_NONE
@@ -60,6 +61,8 @@ PHP_FUNCTION(kkday_encrypt)
     ZEND_PARSE_PARAMETERS_END();
 
     encrypted = strpprintf(0, "plain: %s, len: %ld\r\n", plain_text, plain_text_len);
+
+    say();
 
     RETURN_STR(encrypted);
 }
